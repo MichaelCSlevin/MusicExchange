@@ -20,6 +20,21 @@ public abstract class Instrument implements Playable {
         this.instrumentType = instrumentType;
     }
 
+    public String getBrand() {
+        return brand;
+    }
+
+    public InstrumentType getInstrumentType() {
+        return instrumentType;
+    }
+
+    public int getBuyPrice() {
+        return buyPrice;
+    }
+
+    public int getSellPrice() {
+        return sellPrice;
+    }
 
     public abstract String play();
 

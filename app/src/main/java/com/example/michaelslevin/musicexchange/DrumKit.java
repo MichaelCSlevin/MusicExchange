@@ -15,8 +15,6 @@ public class DrumKit extends Instrument implements Playable, Sellable{
 
     public DrumKit(String brand, int buyPrice, int sellPrice, int numberOfDrums) {
         super(brand, buyPrice, sellPrice, InstrumentType.PERCUSSION);
-        this.buyPrice = buyPrice;
-        this.sellPrice = sellPrice;
         this.numberOfDrums = numberOfDrums;
     }
 
@@ -37,7 +35,7 @@ public class DrumKit extends Instrument implements Playable, Sellable{
     }
 
     public int calculateMarkUp(){
-        return (sellPrice - buyPrice);
+        return getSellPrice() - getBuyPrice();  //gets attributes from getters in Instrument class
     }
 
 }
