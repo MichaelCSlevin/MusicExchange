@@ -1,5 +1,7 @@
 package com.example.michaelslevin.musicexchange;
 
+import com.example.michaelslevin.musicexchange.enums.InstrumentType;
+
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -15,7 +17,7 @@ public class Ocarina extends Instrument implements Playable, Sellable {
     private String colour;
 
     public Ocarina( String brand, int buyPrice, int sellPrice, String colour) {
-        super(brand);
+        super(brand, buyPrice, sellPrice, InstrumentType.WOODWIND);
         this.buyPrice = buyPrice;
         this.sellPrice = sellPrice;
         this.colour = colour;

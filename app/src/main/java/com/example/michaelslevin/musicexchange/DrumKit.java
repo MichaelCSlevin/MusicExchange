@@ -1,5 +1,9 @@
 package com.example.michaelslevin.musicexchange;
 
+import com.example.michaelslevin.musicexchange.enums.InstrumentType;
+
+import static com.example.michaelslevin.musicexchange.enums.InstrumentType.PERCUSSION;
+
 /**
  * Created by michaelslevin on 28/10/2017.
  */
@@ -10,7 +14,7 @@ public class DrumKit extends Instrument implements Playable, Sellable{
     private int numberOfDrums;
 
     public DrumKit(String brand, int buyPrice, int sellPrice, int numberOfDrums) {
-        super(brand);
+        super(brand, buyPrice, sellPrice, InstrumentType.PERCUSSION);
         this.buyPrice = buyPrice;
         this.sellPrice = sellPrice;
         this.numberOfDrums = numberOfDrums;
