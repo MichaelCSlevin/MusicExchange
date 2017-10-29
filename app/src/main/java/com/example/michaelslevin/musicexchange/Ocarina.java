@@ -8,7 +8,7 @@ import static org.junit.Assert.assertEquals;
  * Created by michaelslevin on 28/10/2017.
  */
 
-public class Ocarina extends Instrument implements Playable {
+public class Ocarina extends Instrument implements Playable, Sellable {
     private String brand;
     private int buyPrice;
     private int sellPrice;

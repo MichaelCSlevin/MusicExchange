@@ -4,7 +4,7 @@ package com.example.michaelslevin.musicexchange;
  * Created by michaelslevin on 28/10/2017.
  */
 
-public class Theremin extends Instrument implements Playable {
+public class Theremin extends Instrument implements Playable, Sellable {
     private int buyPrice;
     private int sellPrice;
     private int pitch;
