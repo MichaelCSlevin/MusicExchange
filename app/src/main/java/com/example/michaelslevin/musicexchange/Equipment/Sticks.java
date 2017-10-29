@@ -11,7 +11,7 @@ public class Sticks implements Sellable {
     private int buyPrice;
     private int sellPrice;
 
-    public Sticks(String type, int buyPrice, int SellPrice) {
+    public Sticks(String type, int buyPrice, int sellPrice) {
         this.type = type;
         this.buyPrice = buyPrice;
         this.sellPrice = sellPrice;
@@ -31,6 +31,6 @@ public class Sticks implements Sellable {
     }
 
     public int calculateMarkUp(){
-        return (sellPrice - buyPrice);
+        return sellPrice - buyPrice;
     }
 }
