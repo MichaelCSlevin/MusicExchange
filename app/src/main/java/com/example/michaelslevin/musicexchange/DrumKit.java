@@ -8,15 +8,15 @@ import static com.example.michaelslevin.musicexchange.enums.InstrumentType.PERCU
  * Created by michaelslevin on 28/10/2017.
  */
 
-public class DrumKit extends Instrument implements Playable, Sellable{
-    private int buyPrice;
-    private int sellPrice;
+public class DrumKit extends Instrument{
     private int numberOfDrums;
 
     public DrumKit(String brand, int buyPrice, int sellPrice, int numberOfDrums) {
         super(brand, buyPrice, sellPrice, InstrumentType.PERCUSSION);
         this.numberOfDrums = numberOfDrums;
     }
+
+
 
     public int getBuyPrice() {
         return buyPrice;
@@ -37,6 +37,7 @@ public class DrumKit extends Instrument implements Playable, Sellable{
     public int calculateMarkUp(){
         return getSellPrice() - getBuyPrice();  //gets attributes from getters in Instrument class
     }
+
 
 }
 

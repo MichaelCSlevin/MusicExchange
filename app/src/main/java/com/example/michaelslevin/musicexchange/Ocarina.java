@@ -10,7 +10,7 @@ import static org.junit.Assert.assertEquals;
  * Created by michaelslevin on 28/10/2017.
  */
 
-public class Ocarina extends Instrument implements Playable, Sellable {
+public class Ocarina extends Instrument {
     private String brand;
     private int buyPrice;
     private int sellPrice;
@@ -19,7 +19,7 @@ public class Ocarina extends Instrument implements Playable, Sellable {
     public Ocarina( String brand, int buyPrice, int sellPrice, String colour) {
         super(brand, buyPrice, sellPrice, InstrumentType.WOODWIND);
         this.buyPrice = buyPrice;
-        this.sellPrice = sellPrice;
+        this.sellPrice = sellPrice; //Dependency Inversion Principle - too many attributes that are already set by abstract class
         this.colour = colour;
 
 
@@ -48,6 +48,6 @@ public class Ocarina extends Instrument implements Playable, Sellable {
     public int calculateMarkUp(){
         return (sellPrice - buyPrice);
     }
-
+//Dependency Inversion Principle - too many methods  that are already set by abstract class
 
 }

@@ -14,7 +14,7 @@ public class Reed implements Sellable {
     public Reed(String type, int buyPrice, int sellPrice) {
         this.type = type;
         this.buyPrice = buyPrice;
-        this.sellPrice = sellPrice;
+        this.sellPrice = sellPrice;  //Dependency Inversion Principle
     }
 
     public String getType() {

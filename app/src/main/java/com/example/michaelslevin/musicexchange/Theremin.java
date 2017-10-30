@@ -6,7 +6,7 @@ import com.example.michaelslevin.musicexchange.enums.InstrumentType;
  * Created by michaelslevin on 28/10/2017.
  */
 
-public class Theremin extends Instrument implements Playable, Sellable {
+public class Theremin extends Instrument{
     private int buyPrice;
     private int sellPrice;
     private int pitch;
@@ -15,7 +15,7 @@ public class Theremin extends Instrument implements Playable, Sellable {
         super(brand, buyPrice, sellPrice, InstrumentType.ELECTRONIC);
         this.buyPrice = buyPrice;
         this.sellPrice = sellPrice;
-        this.pitch = pitch;
+        this.pitch = pitch; //Dependency Inversion Principle - too many attributes that are already set by abstract class
     }
 
     public String play() {

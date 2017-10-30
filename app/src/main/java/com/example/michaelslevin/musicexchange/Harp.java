@@ -19,11 +19,11 @@ public class Harp extends Instrument implements Playable, Sellable {
     }
 
     public int getBuyPrice() {
-        return buyPrice;
+        return buyPrice; ////Dependency Inversion Principle - too many attributes that are already set by abstract class
     }
 
     public int getSellPrice() {
-        return sellPrice;
+        return sellPrice; //Dependency Inversion Principle - too many attributes that are already set by abstract class
     }
 
     public int getStringNumber() {

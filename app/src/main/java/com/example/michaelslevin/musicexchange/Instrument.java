@@ -6,11 +6,11 @@ import com.example.michaelslevin.musicexchange.enums.InstrumentType;
  * Created by michaelslevin on 28/10/2017.
  */
 
-public abstract class Instrument implements Playable {
+public abstract class Instrument implements Playable, Sellable{
     private String brand;
     private InstrumentType instrumentType;
-    private int buyPrice;
-    private int sellPrice;
+    protected int buyPrice;
+    protected int sellPrice; //Open Closed Principle - changed from private to protected to allow more instruments to be created more easily.
 
     public Instrument(String brand, int buyPrice,
                       int sellPrice, InstrumentType instrumentType) {

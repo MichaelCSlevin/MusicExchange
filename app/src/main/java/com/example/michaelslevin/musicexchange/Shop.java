@@ -10,7 +10,7 @@ public class Shop {
     private ArrayList<Sellable> stock;
 
     public Shop(ArrayList<Sellable> stock) {
-        this.stock = stock;
+        this.stock = new ArrayList<Sellable>();
     }
 
     public ArrayList<Sellable> getStock() {

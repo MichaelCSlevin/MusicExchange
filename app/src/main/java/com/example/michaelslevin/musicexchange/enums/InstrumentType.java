@@ -11,6 +11,6 @@ public enum InstrumentType {
     ELECTRONIC,
     BRASS,
     KEYS,
-    OTHER;
+    OTHER  // semicolon not needed if no methods included in class
 
 }

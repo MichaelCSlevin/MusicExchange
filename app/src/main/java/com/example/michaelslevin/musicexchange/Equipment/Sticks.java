@@ -14,7 +14,7 @@ public class Sticks implements Sellable {
     public Sticks(String type, int buyPrice, int sellPrice) {
         this.type = type;
         this.buyPrice = buyPrice;
-        this.sellPrice = sellPrice;
+        this.sellPrice = sellPrice; ////Dependency Inversion Principle - too many attributes that are already set by abstract class
 
     }
 
